@@ -227,7 +227,7 @@
 <body>
 
 <video autoplay muted loop id="bg-video">
-    <source src="assets/bg.mp4" type="video/mp4">
+    <source src="bg.mp4" type="video/mp4">
 </video>
 
 <div id="loading-overlay"><div class="spinner"></div></div>
@@ -237,7 +237,7 @@
 <!-- 고정 헤더: 네비만 -->
 <div id="top-interface">
     <div id="header-wrapper">
-        <img src="assets/headerimage.jpg" id="header-img" alt="header">
+        <img src="headerimage.jpg" id="header-img" alt="header">
         <div id="fake-back-btn"    class="fake-btn"></div>
         <div id="fake-refresh-btn" class="fake-btn"></div>
     </div>
@@ -313,7 +313,7 @@
         card.className = "card";
 
         const img = document.createElement("img");
-        img.src = `assets/image${imgIndex}.jpg`;
+        img.src = `image${imgIndex}.jpg`;
         img.alt = row["제목"] || "";
         img.onerror = function() { this.style.display = "none"; };
         img.style.width = widths[Math.floor(Math.random() * widths.length)] + "px";
@@ -387,7 +387,7 @@
                     const card = document.createElement("div");
                     card.className = "card";
                     const img = document.createElement("img");
-                    img.src = `assets/image${i}.jpg`;
+                    img.src = `image${i}.jpg`;
                     img.onerror = function() { this.style.display = "none"; };
                     img.style.width = widths[i % widths.length] + "px";
                     card.appendChild(img);
@@ -409,7 +409,7 @@
         else if (styleType === 'spread')  { vX = Math.random()*12-6;  vY = Math.random()*4-2; }
 
         const bombNum = Math.floor(Math.random() * 40) + 1;
-        const baseSrc = `assets/bomb${bombNum}`;
+        const baseSrc = `bomb${bombNum}`;
         const layer   = document.getElementById('dopamine-layer');
         const cnt     = styleType === 'explosion' ? 1 : count;
 
